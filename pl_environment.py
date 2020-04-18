@@ -31,7 +31,3 @@ class Environment(object):
         if name in self.funcMap:
             return self.funcMap[name]
         raise EvalException(pos, "undefined function: " + name)
-
-    def copy(self):
-        copy.deepcopy()
-        return 0
